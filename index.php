@@ -678,6 +678,10 @@ else if($_SESSION['fiesta_pnl_fst_pass']==Config::get('panel.password1'))
             		<div class="MD_unit_title unit_title_blue">Créateur</div>
             		<div class="MD_unit_text">Fiesta v2.6 (2.6.0.264) PHP Framework</div>
             		<div class="MD_unit_text">Crée par <b>Youssef Had</b> (youssefhad2@gmail.com - <a href="http://www.facebook.com/yussef.had" style="color:white">www.facebook.com/yussef.had</a> )<br></div>
+            	</div>
+
+            	<div class="MD_unit MD_unit_slategray">
+            		<div class="MD_unit_title unit_title_slategray">GitHub</div>
             		<div class="MD_unit_text">
             			<!-- Place this tag where you want the button to render. -->
 						<a class="github-button" href="https://github.com/fiesta-framework/Fiesta" data-icon="octicon-star" data-style="mega" data-count-href="/fiesta-framework/Fiesta/stargazers" data-count-api="/repos/fiesta-framework/Fiesta#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star fiesta-framework/Fiesta on GitHub">Star</a>
@@ -702,7 +706,7 @@ else if($_SESSION['fiesta_pnl_fst_pass']==Config::get('panel.password1'))
 	        		<div class="MD_unit_title unit_title_red">Versions</div>
 	        		<div class="MD_unit_text">
 
-	        			<div> Fiesta v2.6 (beta) ....  <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/releases/tag/2.5.1.244">Github</a> - <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/archive/2.5.1.244.zip">Download</a></div>
+	        			<div> Fiesta v3.0 (beta) ....  <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/releases/tag/2.5.1.244">Github</a> - <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/archive/2.5.1.244.zip">Download</a></div>
 
 	        			<div> Fiesta v2.5 ................  <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/releases/tag/2.5.0.236">Github</a> - <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/archive/2.5.0.236.zip">Download</a></div>
 
