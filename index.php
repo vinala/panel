@@ -675,8 +675,9 @@ else if($_SESSION['fiesta_pnl_fst_pass']==Config::get('panel.password1'))
 			</div>
 			<div class="col-md-6" >
             	<div class="MD_unit MD_unit_blue">
-            		<div class="MD_unit_title unit_title_blue">Créateur</div>
-            		<div class="MD_unit_text">Fiesta v2.6 (2.6.0.264) PHP Framework</div>
+            		<div class="MD_unit_title unit_title_blue">Framework</div>
+            		<div class="MD_unit_text">Fiesta v3 (3.0.*) PHP Framework</div>
+            		<div class="MD_unit_text">Fiesta Panel v3 (3.0.*)</div>
             		<div class="MD_unit_text">Crée par <b>Youssef Had</b> (youssefhad2@gmail.com - <a href="http://www.facebook.com/yussef.had" style="color:white">www.facebook.com/yussef.had</a> )<br></div>
             	</div>
 
