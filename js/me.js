@@ -29,7 +29,7 @@ $(document).ready(function (){
     });
 
     $('#rollback_last_migrate').submit(function () {
-        $.post(projectRoute+'rollback_migration',$('#formf3').serialize(),function(data)
+        $.post(projectRoute+'/rollback_migration',$('#formf3').serialize(),function(data)
             {
                 msg(data);
             });
