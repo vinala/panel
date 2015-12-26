@@ -1,0 +1,16 @@
+{
+	"name": "fiesta/panel",
+	"description": "The Fiesta Panel.",
+	"keywords": ["framework", "fiesta","Panel"],
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Youssef Had",
+			"email": "youssefhad2@gmail.com"
+		}
+	],
+	"require": {
+		"php": ">=5.5.9",
+		"fiesta/fiesta": ">=3.0.0"
+	}
+}
