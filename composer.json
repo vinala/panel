@@ -12,4 +12,7 @@
 	"require": {
 		"php": ">=5.5.9"
 	}
+	"autoload": {
+		"file": "App.php"
+	}
 }
