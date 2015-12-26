@@ -10,7 +10,7 @@
 		}
 	],
 	"require": {
-		"php": ">=5.5.9",
-		"fiesta/fiesta": ">=3.0.0"
+		"php": ">=5.5.9"
+		// "fiesta/fiesta": ">=3.0.0"
 	}
 }
