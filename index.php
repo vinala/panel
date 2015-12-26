@@ -1,5 +1,7 @@
 <?php 
 
+if( ! class_exists("Config")) die("");
+
 use Fiesta\Core\Database\Migration;
 
 $rot="app/pages/panel";
