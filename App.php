@@ -7,7 +7,7 @@ $root="./app/pages/panel";
 $rooot=$root;
 
 
-$path="public/".Config::get('panel.folder')."/";
+$path="vendor/fiesta/".Config::get('panel.folder')."/";
 $appPath="../app/";
 
 
@@ -85,7 +85,6 @@ else if($_SESSION['fiesta_pnl_fst_pass']==Config::get('panel.password1'))
 	<?php 
 		Html::charset();
 		Html::favicon(Path::$public."/favicon.ico");
-		$path="public/".Config::get('panel.folder')."/";
 		Libs::css($path."css/main.css",false); 
 		Libs::js($path."js/main.js",false);
 		Libs::js($path."js/me.js",false);
@@ -733,6 +732,8 @@ else if($_SESSION['fiesta_pnl_fst_pass']==Config::get('panel.password1'))
 </body>
 <script type="text/javascript">
 	<?php echo "var panelFolder='".Config::get('panel.folder')."';"; ?>
+	<?php echo "var projectUrl='".Config::get('app.url')."';"; ?>
+	<?php echo "var projectRoute='".Config::get('panel.route')."';"; ?>
 </script>
 </html>
 <?php } ?>
