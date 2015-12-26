@@ -14,6 +14,13 @@ use Fiesta\Core\Objects\Date_Time as Time;
 /**
 * File for Panel features
 */
+class Panel
+{
+	public static function version()
+	{
+		return "Fiesta Panel v3 (3.0.21)";
+	}
+}
 
 /**
 * Seeds class
