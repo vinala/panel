@@ -700,6 +700,10 @@ else if($_SESSION['fiesta_pnl_fst_pass']==Config::get('panel.password1'))
 						<!-- Place this tag right after the last button or just before your close body tag. -->
 						<script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
             		</div>
+
+            		<div class="MD_unit_text">
+						<a class="github-button" href="https://github.com/fiesta-framework/Fiesta/issues">Issues</a>
+					</div>
             	</div>
 			</div>
 			<div class="col-md-6" >
