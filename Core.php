@@ -18,7 +18,7 @@ class Panel
 {
 	public static function version()
 	{
-		return "Fiesta Panel v3 (2.1.24)";
+		return "Fiesta Panel v2.1 (2.1.24)";
 	}
 }
 
