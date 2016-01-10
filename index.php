@@ -3,13 +3,14 @@
 if( ! class_exists("Config")) die("");
 
 use Fiesta\Core\Database\Migration;
+use Fiesta\Vendor\Panel\Panel;
 
 $rot="app/pages/panel";
 $root="./app/pages/panel";
 $rooot=$root;
 
 
-$path="vendor/fiesta/".Config::get('panel.folder')."/";
+$path = Panel::getPath();
 $appPath="../app/";
 
 
@@ -742,7 +743,7 @@ else if($_SESSION['fiesta_pnl_fst_pass']==Config::get('panel.password1'))
 
 </body>
 <script type="text/javascript">
-	<?php echo "var panelFolder='".Config::get('panel.folder')."';"; ?>
+	<?php echo "var panelPath='".Config::get('panel.path')."';"; ?>
 	<?php echo "var projectUrl='".Config::get('app.url')."';"; ?>
 	<?php echo "var projectRoute='".Config::get('panel.route')."';"; ?>
 </script>
