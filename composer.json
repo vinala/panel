@@ -10,7 +10,8 @@
 		}
 	],
 	"require": {
-		"php": ">=5.5.9"
+		"php": ">=5.5.9",
+		"fiesta/fiesta": "~2.5.19",
 	},
 	"autoload": {
 		"files": ["Core.php"]
