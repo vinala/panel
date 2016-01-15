@@ -712,7 +712,7 @@ else if($_SESSION['fiesta_pnl_fst_pass']==Config::get('panel.password1'))
 	        		<div class="MD_unit_title unit_title_red">Versions</div>
 	        		<div class="MD_unit_text">
 
-	        			<div> Fiesta v3.0 (beta) ....  <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/releases/tag/2.5.1.244">Github</a> - <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/archive/2.5.1.244.zip">Download</a></div>
+	        			<div> Fiesta v3.0 ....  <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/releases/tag/3.0.0">Github</a> - <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/releases/tag/3.0.0.zip">Download</a></div>
 
 	        			<div> Fiesta v2.5 ................  <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/releases/tag/2.5.0.236">Github</a> - <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/archive/2.5.0.236.zip">Download</a></div>
 
