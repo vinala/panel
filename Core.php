@@ -10,7 +10,7 @@ use Fiesta\Core\Database\Schema;
 use Fiesta\Core\Database\Database;
 use Fiesta\Core\Objects\DateTime as Time;
 use Fiesta\Core\Router\Route;
-use Fiesta\Core\Objects\string;
+use Fiesta\Core\Objects\string as Strg;
 
 /**
 * File for Panel features
@@ -52,7 +52,7 @@ class Panel
 	public static function getPath()
 	{
 		$rPath = "";
-		$paths = String::splite(Config::get('panel.path'),"/");
+		$paths = Strg::splite(Config::get('panel.path'),"/");
 		for ($i=0; $i < count($paths) - 1; $i++) $rPath .= $paths[$i]."/";
 		//
 		return $rPath;
