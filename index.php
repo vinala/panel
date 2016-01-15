@@ -712,27 +712,29 @@ else if($_SESSION['fiesta_pnl_fst_pass']==Config::get('panel.password1'))
 	        		<div class="MD_unit_title unit_title_red">Versions</div>
 	        		<div class="MD_unit_text">
 
-	        			<div> Fiesta v3.0 ....  <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/releases/tag/3.0.0">Github</a> - <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/releases/tag/3.0.0.zip">Download</a></div>
+	        			<div>v3.0 ................  <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/releases/tag/3.0.0">Github</a> - <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/releases/tag/3.0.0.zip">Download</a></div>
 
-	        			<div> Fiesta v2.5 ................  <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/releases/tag/2.5.0.236">Github</a> - <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/archive/2.5.0.236.zip">Download</a></div>
+	        			<div>v2.5 ................  <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/releases/tag/2.5.0.236">Github</a> - <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/archive/2.5.0.236.zip">Download</a></div>
 
-	        			<div> Fiesta v2.0 ................  <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/releases/tag/2.0.0.1">Github</a> - <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/archive/2.0.0.1.zip">Download</a></div>
+	        			<div>v2.0 ................  <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/releases/tag/2.0.0.1">Github</a> - <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/archive/2.0.0.1.zip">Download</a></div>
 
-	        			<div> Fiesta v1.5 ................  <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/releases/tag/1.5.0">Github</a> - <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/archive/1.5.0.zip">Download</a></div>
+	        			<div>v1.5 ................  <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/releases/tag/1.5.0">Github</a> - <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/archive/1.5.0.zip">Download</a></div>
 
-	        			<div> Fiesta v1.4.4 .............  <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/releases/tag/1.4.4">Github</a> - <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/archive/1.4.4.zip">Download</a></div>
+	        			<div>v1.4.4 .............  <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/releases/tag/1.4.4">Github</a> - <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/archive/1.4.4.zip">Download</a></div>
 
-	        			<div> Fiesta v1.4.3 .............  <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/releases/tag/1.4.3">Github</a> - <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/archive/1.4.3.zip">Download</a></div>
+	        			<div>v1.4.3 .............  <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/releases/tag/1.4.3">Github</a> - <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/archive/1.4.3.zip">Download</a></div>
 
-	        			<div> Fiesta v1.4.2 .............  <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/releases/tag/1.4.2">Github</a> - <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/archive/1.4.2.zip">Download</a></div>
+	        			<div>v1.4.2 .............  <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/releases/tag/1.4.2">Github</a> - <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/archive/1.4.2.zip">Download</a></div>
 
-	        			<div> Fiesta v1.4.1 .............  <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/releases/tag/1.4.1">Github</a> - <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/archive/1.4.1.zip">Download</a></div>
+	        			<div>v1.4.1 .............  <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/releases/tag/1.4.1">Github</a> - <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/archive/1.4.1.zip">Download</a></div>
 
-	        			<div> Fiesta v1.4 ................  <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/releases/tag/1.4">Github</a> - <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/archive/1.4.zip">Download</a></div>
+	        			<div>v1.4 ................  <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/releases/tag/1.4">Github</a> - <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/archive/1.4.zip">Download</a></div>
 
-	        			<div> Fiesta v1.3.2 .............  <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/releases/tag/1.3.2">Github</a> - <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/archive/1.3.2.zip">Download</a></div>
+	        			<div>v1.3.2 .............  <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/releases/tag/1.3.2">Github</a> - <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/archive/1.3.2.zip">Download</a></div>
 
-	        			<div> Fiesta v1.3.1 .............  <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/releases/tag/1.3.1">Github</a> - <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/archive/1.3.1.zip">Download</a></div>
+	        			<div>v1.3.1 .............  <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/releases/tag/1.3.1">Github</a> - <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/archive/1.3.1.zip">Download</a></div>
+
+	        			<div> master (3.*-dev) .......  <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/tree/master">Github</a> - <a class="version_link" href="https://github.com/fiesta-framework/Fiesta/archive/master.zip">Download</a></div>
 
 	        		</div>
 	            </div>
