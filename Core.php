@@ -5,7 +5,7 @@ namespace Fiesta\Vendor\Panel;
 use Fiesta\Core\Glob\App;
 use Fiesta\Core\Database\Seeder;
 use Fiesta\Core\Database\Migration;
-use Fiesta\Core\Config\Config;
+use Fiesta\Kernel\Config\Config;
 use Fiesta\Core\Database\Schema;
 use Fiesta\Core\Database\Database;
 use Fiesta\Core\Objects\DateTime as Time;
