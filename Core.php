@@ -2,15 +2,15 @@
 
 namespace Fiesta\Vendor\Panel;
 //
-use Fiesta\Core\Glob\App;
-use Fiesta\Core\Database\Seeder;
-use Fiesta\Core\Database\Migration;
+use Fiesta\Kernel\Glob\App;
+use Fiesta\Kernel\Database\Seeder;
+use Fiesta\Kernel\Database\Migration;
 use Fiesta\Kernel\Config\Config;
-use Fiesta\Core\Database\Schema;
-use Fiesta\Core\Database\Database;
-use Fiesta\Core\Objects\DateTime as Time;
-use Fiesta\Core\Router\Route;
-use Fiesta\Core\Objects\string as Strg;
+use Fiesta\Kernel\Database\Schema;
+use Fiesta\Kernel\Database\Database;
+use Fiesta\Kernel\Objects\DateTime as Time;
+use Fiesta\Kernel\Router\Route;
+use Fiesta\Kernel\Objects\string as Strg;
 
 /**
 * File for Panel features
@@ -90,7 +90,7 @@ class Seeds
 
 	public static function set($nom)
 	{
-		$txt = "<?php\n\nuse Fiesta\Core\Database\Seeder;\n\n";
+		$txt = "<?php\n\nuse Fiesta\Kernel\Database\Seeder;\n\n";
 		$txt.="/**\n* class de seeder $nom\n*/\n\nclass $nom extends Seeder\n{\n";
 
 		//datatable name
@@ -417,7 +417,7 @@ class Controller
 
 	public static function set($class)
 	{
-		$txt = "<?php\n\n use Fiesta\Core\MVC\Controller\Controller;\n\n";
+		$txt = "<?php\n\n use Fiesta\Kernel\MVC\Controller\Controller;\n\n";
 		$txt.="/**\n* class de controller $class\n*/\n\nclass $class extends Controller\n{\n\t";
 
 		//view
@@ -575,7 +575,7 @@ class Model
 
 	public static function set($class , $table)
 	{
-		$txt = "<?php\n\nuse Fiesta\Core\MVC\Model\Model;\n\n";
+		$txt = "<?php\n\nuse Fiesta\Kernel\MVC\Model\Model;\n\n";
 		$txt.="class $class extends Model\n{\n\t//Name of the table in database\n\tpublic static ".'$table'."='$table';\n\tprotected static ".'$foreignKeys=array();'."\n\n}";
 		//
 		return $txt;
