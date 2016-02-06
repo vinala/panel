@@ -19,7 +19,7 @@ class Panel
 {
 	public static function version()
 	{
-		return "Fiesta Panel v2.1.33 (2.1.33)";
+		return "Fiesta Panel v2.1.35 (2.1.35)";
 	}
 
 	public static function run()
