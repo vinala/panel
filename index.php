@@ -677,7 +677,7 @@ else if($_SESSION['fiesta_pnl_fst_pass']==Config::get('panel.password1'))
 			<div class="col-md-6" >
             	<div class="MD_unit MD_unit_blue">
             		<div class="MD_unit_title unit_title_blue">Framework</div>
-            		<div class="MD_unit_text"><?php echo Fiesta\Kernel\Glob\App::version(); ?></div>
+            		<div class="MD_unit_text"><?php echo Fiesta\Kernel\Foundation\Application::version(); ?></div>
             		<div class="MD_unit_text"><?php echo Fiesta\Vendor\Panel\Panel::version(); ?></div>
             		<div class="MD_unit_text">Crée par <b>Youssef Had</b> (youssefhad2@gmail.com - <a href="http://www.facebook.com/yussef.had" style="color:white">www.facebook.com/yussef.had</a> )<br></div>
             	</div>

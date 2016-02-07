@@ -2,7 +2,7 @@
 
 namespace Fiesta\Vendor\Panel;
 //
-use Fiesta\Kernel\Glob\App;
+use Fiesta\Kernel\Foundation\Application;
 use Fiesta\Kernel\Database\Seeder;
 use Fiesta\Kernel\Database\Migration;
 use Fiesta\Kernel\Config\Config;
