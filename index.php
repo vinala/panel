@@ -750,9 +750,10 @@ else if($_SESSION['fiesta_pnl_fst_pass']==Config::get('panel.password1'))
 
 </body>
 <script type="text/javascript">
-	<?php echo "var panelPath='".Config::get('panel.path')."';"; ?>
+	<?php echo "var panelPath='".Panel::$path."';" ?>
 	<?php echo "var projectUrl='".Config::get('app.url')."';"; ?>
 	<?php echo "var projectRoute='".Config::get('panel.route')."';"; ?>
+	<?php echo "var projectPrefix='".Config::get('security.prefix')."';"; ?>
 </script>
 </html>
 <?php } ?>
