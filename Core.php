@@ -17,6 +17,15 @@ use Fiesta\Kernel\Objects\Strings;
 */
 class Panel
 {
+
+	/**
+	 * Path of panel in the project
+	 */
+	protected static $path = "vendor/fiesta/panel/index.php";
+
+	/**
+	 * Version of the panel
+	 */
 	public static function version()
 	{
 		return "Fiesta Panel v2.1.35";
@@ -27,7 +36,7 @@ class Panel
 		if(Config::get('panel.enable'))
 		{
 			Route::get(Config::get('panel.route'),function(){
-				include "../".Config::get('panel.path');
+				include "../".self::$path;
 			});
 			//
 			Route::get(Config::get('panel.route')."/{op}",function($op){
@@ -52,7 +61,7 @@ class Panel
 	public static function getPath()
 	{
 		$rPath = "";
-		$paths = Strings::splite(Config::get('panel.path'),"/");
+		$paths = Strings::splite(self::$path,"/");
 		for ($i=0; $i < count($paths) - 1; $i++) $rPath .= $paths[$i]."/";
 		//
 		return $rPath;
