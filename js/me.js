@@ -11,7 +11,7 @@ $(document).ready(function (){
     });
 
     $('#new_migrate').submit(function () {
-        $.post(projectRoute+'/'+projectPrefix+'new_migration',$('#new_migrate').serialize(),function(data)
+        $.post(projectRoute+'/new_migration',$('#new_migrate').serialize(),function(data)
             {
                 msg(data);
             });
@@ -20,7 +20,7 @@ $(document).ready(function (){
     });
 
     $('#exec_last_migrate').submit(function () {
-        $.post(projectRoute+'/'+projectPrefix+'exec_migration',$('#formf2').serialize(),function(data)
+        $.post(projectRoute+'/exec_migration',$('#formf2').serialize(),function(data)
             {
                 msg(data);
             });
@@ -29,7 +29,7 @@ $(document).ready(function (){
     });
 
     $('#rollback_last_migrate').submit(function () {
-        $.post(projectRoute+'/'+projectPrefix+'rollback_migration',$('#formf3').serialize(),function(data)
+        $.post(projectRoute+'/rollback_migration',$('#formf3').serialize(),function(data)
             {
                 msg(data);
             });
@@ -38,7 +38,7 @@ $(document).ready(function (){
     });
 
     $('#exec_cos_migrate').submit(function () {
-        $.post(projectRoute+'/'+projectPrefix+'exec_cos_migration',$('#exec_cos_migrate').serialize(),function(data)
+        $.post(projectRoute+'/exec_cos_migration',$('#exec_cos_migrate').serialize(),function(data)
             {
                 msg(data);
             });
@@ -47,7 +47,7 @@ $(document).ready(function (){
     });
 
     $('#rollback_cos_migrate').submit(function () {
-        $.post(projectRoute+'/'+projectPrefix+'rollback_cos_migration',$('#exec_cos_migrate').serialize(),function(data)
+        $.post(projectRoute+'/rollback_cos_migration',$('#exec_cos_migrate').serialize(),function(data)
             {
                 msg(data);
             });
@@ -56,7 +56,7 @@ $(document).ready(function (){
     });
 
     $('#new_link').submit(function () {
-        $.post(projectRoute+'/'+projectPrefix+'new_link',$('#new_link').serialize(),function(data)
+        $.post(projectRoute+'/new_link',$('#new_link').serialize(),function(data)
             {
                 msg(data);
             });
@@ -65,7 +65,7 @@ $(document).ready(function (){
     });
 
     $('#new_seed').submit(function () {
-        $.post(projectRoute+'/'+projectPrefix+'new_seed',$('#new_seed').serialize(),function(data)
+        $.post(projectRoute+'/new_seed',$('#new_seed').serialize(),function(data)
             {
                 msg(data);
             });
@@ -74,7 +74,7 @@ $(document).ready(function (){
     });
 
     $('#run_seed').submit(function () {
-        $.post(projectRoute+'/'+projectPrefix+'exec_seed',$('#run_seed').serialize(),function(data)
+        $.post(projectRoute+'/exec_seed',$('#run_seed').serialize(),function(data)
             {
                 msg(data);
             });
@@ -83,7 +83,7 @@ $(document).ready(function (){
     });
 
     $('#new_lang_dir').submit(function () {
-        $.post(projectRoute+'/'+projectPrefix+'new_dir_lang',$('#new_lang_dir').serialize(),function(data)
+        $.post(projectRoute+'/new_dir_lang',$('#new_lang_dir').serialize(),function(data)
             {
                 msg(data);
                 if(data=="okey") $('#new_lang_dir').reset();
@@ -95,7 +95,7 @@ $(document).ready(function (){
     $('#new_lang_file').submit(function () {
         if(document.getElementById('lang_file_name').value!="")
         {
-            $.post(projectRoute+'/'+projectPrefix+'new_lang_file',$('#new_lang_file').serialize(),function(data)
+            $.post(projectRoute+'/new_lang_file',$('#new_lang_file').serialize(),function(data)
             {
                 msg(data);
             });
@@ -110,7 +110,7 @@ $(document).ready(function (){
     });
 
     $('#new_models').submit(function () {
-        $.post(projectRoute+'/'+projectPrefix+'new_model',$('#new_models').serialize(),function(data)
+        $.post(projectRoute+'/new_model',$('#new_models').serialize(),function(data)
             {
                 msg(data);
             });
@@ -119,7 +119,7 @@ $(document).ready(function (){
     });
 
     $('#new_view').submit(function () {
-        $.post(projectRoute+'/'+projectPrefix+'new_view',$('#new_view').serialize(),function(data)
+        $.post(projectRoute+'/new_view',$('#new_view').serialize(),function(data)
             {
                 msg(data);
             });
@@ -128,7 +128,7 @@ $(document).ready(function (){
     });
 
     $('#new_controller').submit(function () {
-        $.post(projectRoute+'/'+projectPrefix+'new_controller',$('#new_controller').serialize(),function(data)
+        $.post(projectRoute+'/new_controller',$('#new_controller').serialize(),function(data)
             {
                 msg(data);
             });
