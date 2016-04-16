@@ -1,16 +1,16 @@
 <?php
 
-namespace Fiesta\Vendor\Panel;
+namespace Pikia\Vendor\Panel;
 //
-use Fiesta\Kernel\Foundation\Application;
-use Fiesta\Kernel\Database\Seeder;
-use Fiesta\Kernel\Database\Migration;
-use Fiesta\Kernel\Config\Config;
-use Fiesta\Kernel\Database\Schema;
-use Fiesta\Kernel\Database\Database;
-use Fiesta\Kernel\Objects\DateTime as Time;
-use Fiesta\Kernel\Router\Route;
-use Fiesta\Kernel\Objects\Strings;
+use Pikia\Kernel\Foundation\Application;
+use Pikia\Kernel\Database\Seeder;
+use Pikia\Kernel\Database\Migration;
+use Pikia\Kernel\Config\Config;
+use Pikia\Kernel\Database\Schema;
+use Pikia\Kernel\Database\Database;
+use Pikia\Kernel\Objects\DateTime as Time;
+use Pikia\Kernel\Router\Route;
+use Pikia\Kernel\Objects\Strings;
 
 /**
 * File for Panel features
@@ -28,7 +28,7 @@ class Panel
 	 */
 	public static function version()
 	{
-		return "Fiesta Panel v2.1.35";
+		return "Pikia Panel v2.1.35";
 	}
 
 	public static function run()
@@ -103,7 +103,7 @@ class Seeds
 
 	public static function set($nom)
 	{
-		$txt = "<?php\n\nuse Fiesta\Kernel\Database\Seeder;\n\n";
+		$txt = "<?php\n\nuse Pikia\Kernel\Database\Seeder;\n\n";
 		$txt.="/**\n* class de seeder $nom\n*/\n\nclass $nom extends Seeder\n{\n";
 
 		//datatable name
@@ -430,7 +430,7 @@ class Controller
 
 	public static function set($class)
 	{
-		$txt = "<?php\n\n use Fiesta\Kernel\MVC\Controller\Controller;\n\n";
+		$txt = "<?php\n\n use Pikia\Kernel\MVC\Controller\Controller;\n\n";
 		$txt.="/**\n* class de controller $class\n*/\n\nclass $class extends Controller\n{\n\t";
 
 		//view
@@ -588,7 +588,7 @@ class Model
 
 	public static function set($class , $table)
 	{
-		$txt = "<?php\n\nuse Fiesta\Kernel\MVC\Model\Model;\n\n";
+		$txt = "<?php\n\nuse Pikia\Kernel\MVC\Model\Model;\n\n";
 		$txt.="class $class extends Model\n{\n\t//Name of the table in database\n\tpublic static ".'$table'."='$table';\n\tprotected static ".'$foreignKeys=array();'."\n\n}";
 		//
 		return $txt;
