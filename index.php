@@ -2,8 +2,8 @@
 
 if( ! class_exists("Config")) die("");
 
-use Fiesta\Kernel\Database\Migration;
-use Fiesta\Vendor\Panel\Panel;
+use Pikia\Kernel\Database\Migration;
+use Pikia\Vendor\Panel\Panel;
 
 $rot="app/pages/panel";
 $root="./app/pages/panel";
@@ -19,20 +19,20 @@ $appPath="../app/";
 if(isset($_POST['password_1']) && isset($_POST['password_2']) && !empty($_POST['password_1']) && !empty($_POST['password_1']))
 {
 	if($_POST['password_1']==Config::get('panel.password1') && $_POST['password_2']==Config::get('panel.password2')) 
-		$_SESSION['fiesta_pnl_fst_pass']=$_POST['password_1'];
+		$_SESSION['pikia_pnl_fst_pass']=$_POST['password_1'];
 }
 
 if(isset($_GET['logout']) && $_GET['logout']="1") {
-	$_SESSION['fiesta_pnl_fst_pass']="";unset($_SESSION['fiesta_pnl_fst_pass']);}
+	$_SESSION['pikia_pnl_fst_pass']="";unset($_SESSION['pikia_pnl_fst_pass']);}
 
 
-if(!isset($_SESSION['fiesta_pnl_fst_pass']) || empty($_SESSION['fiesta_pnl_fst_pass']))
+if(!isset($_SESSION['pikia_pnl_fst_pass']) || empty($_SESSION['pikia_pnl_fst_pass']))
 {
 ?>
 <html>
 <head>
 	<?php Html::charset(); ?>
-	<title>Fiesta | Panel</title>
+	<title>Pikia | Panel</title>
 
 	<link rel="stylesheet" href="<?php echo $path ?>bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="<?php echo $path ?>bootstrap/css/bootstrap-theme.min.css">
@@ -57,7 +57,7 @@ if(!isset($_SESSION['fiesta_pnl_fst_pass']) || empty($_SESSION['fiesta_pnl_fst_p
 </head>
 
 <body style="">
-	<img src="<?php echo "app/resources/images/fiesta_logo.png" ?>" class="lg_img">
+	<img src="<?php echo "app/resources/images/pikia_logo.png" ?>" class="lg_img">
 	<div id="login_form">
 		<form accept-charset="UTF-8" role="form" class="form-signin" method="post" action="?login">
             <fieldset>
@@ -75,13 +75,13 @@ if(!isset($_SESSION['fiesta_pnl_fst_pass']) || empty($_SESSION['fiesta_pnl_fst_p
 </html>
 <?php
 }
-else if($_SESSION['fiesta_pnl_fst_pass']==Config::get('panel.password1'))
+else if($_SESSION['pikia_pnl_fst_pass']==Config::get('panel.password1'))
 {
 ?>
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Fiesta | Panel</title>
+	<title>Pikia | Panel</title>
 	<link rel="stylesheet" href="<?php echo $path ?>bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="<?php echo $path ?>bootstrap/css/bootstrap-theme.min.css">
 	<script src="app/library/jquery-1.11.3.min.js"></script>
@@ -677,10 +677,10 @@ else if($_SESSION['fiesta_pnl_fst_pass']==Config::get('panel.password1'))
 			<div class="col-md-6" >
             	<div class="MD_unit MD_unit_blue">
             		<div class="MD_unit_title unit_title_blue">Framework</div>
-            		<div class="MD_unit_text"><?php echo Fiesta\Kernel\Foundation\Application::version(); ?></div>
+            		<div class="MD_unit_text"><?php echo Pikia\Kernel\Foundation\Application::version(); ?></div>
             		<div class="MD_unit_text">
-            			<?php echo Fiesta\Kernel\Foundation\Application::kernelVersion(); ?><br>
-            			<?php echo Fiesta\Vendor\Panel\Panel::version(); ?>
+            			<?php echo Pikia\Kernel\Foundation\Application::kernelVersion(); ?><br>
+            			<?php echo Pikia\Vendor\Panel\Panel::version(); ?>
             		</div>
             		<div class="MD_unit_text">Crée par <b>Youssef Had</b> (youssefhad2@gmail.com - <a href="http://www.facebook.com/yussef.had" style="color:white">www.facebook.com/yussef.had</a> )<br></div>
             	</div>
