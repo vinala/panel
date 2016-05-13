@@ -507,10 +507,10 @@ body
 
 .lg_img
 {
-	width:260px;
-	margin:0pt auto;
-	display:block;
-	margin-top: 30px;
+	width: 400px;
+	margin: 0pt auto;
+	display: block;
+	margin-top: 90px;
 }
 
 #login_form
@@ -520,7 +520,7 @@ body
 	/*font-family: 'Lato', sans-serif;*/
 	width:185px;
 	margin: 0px auto;
-	margin-top: -20px;
+	margin-top: 60px;
 }
 
 
