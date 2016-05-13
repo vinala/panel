@@ -19,12 +19,12 @@ body
 .top_header
 {
 	z-index: 99;
-	background-color: #5b1c79;
+	background-color: #0c47a1;
 	height: 45px;
 	width: 100%;
 	position: fixed;
 	display: block;
-	border-bottom: 1px solid #351047;
+	border-bottom: 1px solid #083875;
 	box-shadow: 1px 1px 1px 1px rgba(10,10,10,.4);
 }
 
@@ -92,14 +92,15 @@ body
 .side_bar .content .link:hover
 {
 	color: white;
-	background-color: rgba(91,28,121,0.4);
+	background-color: rgba(13,71,161,0.3);
 
 }
 
 .side_bar .content .active
 {
 	color: white;
-	background-color: rgba(91,28,121,0.6);
+	/*background-color: rgba(91,28,121,0.6);*/
+	background-color: rgba(13,71,161,0.6);
 }
 .main_panel
 {
@@ -534,11 +535,12 @@ body
 	background-color: transparent;
 	color:white;
 	transition: all 150ms ease-in;
+	outline: none;
 }
 
 .lg_submit:hover
 {
-	background-color: #3e1453;
+	background-color: #083875;
 	color:white;
 }
 
