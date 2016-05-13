@@ -49,7 +49,7 @@ if(!isset($_SESSION['pikia_pnl_fst_pass']) || empty($_SESSION['pikia_pnl_fst_pas
 		{
 			padding:0px;
 			margin:0px;
-			background:#1A237E;
+			background:#0D47A1;
 			font-family: segoe;
 		}
 	</style>
