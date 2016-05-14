@@ -11,6 +11,7 @@ use Pikia\Kernel\Database\Database;
 use Pikia\Kernel\Objects\DateTime as Time;
 use Pikia\Kernel\Router\Route;
 use Pikia\Kernel\Objects\Strings;
+use Pikia\Kernel\Filesystem\Filesystem;
 
 /**
 * File for Panel features
@@ -24,11 +25,16 @@ class Panel
 	protected static $path = "vendor/fiesta/panel/index.php";
 
 	/**
+	 * Path of root panel
+	 */
+	protected static $root = "vendor/fiesta/panel/";
+
+	/**
 	 * Version of the panel
 	 */
 	public static function version()
 	{
-		return "Pikia Panel v2.1.35";
+		return "Pikia Panel v".(new Filesystem)->get(Application::$root.self::$root."version.md");
 	}
 
 	public static function run()
