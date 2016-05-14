@@ -754,6 +754,7 @@ else if($_SESSION['pikia_pnl_fst_pass']==Config::get('panel.password1'))
 	<?php echo "var projectUrl='".Config::get('app.url')."';"; ?>
 	<?php echo "var projectRoute='".Config::get('panel.route')."';"; ?>
 	<?php // echo "var projectPrefix='".(Config::check('security.prefix') ? Config::get('security.prefix')."_" : "" )."';"; ?>
+	<?php echo "var projectPrefix='';"; ?>
 </script>
 </html>
 <?php } ?>

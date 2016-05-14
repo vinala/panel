@@ -42,7 +42,8 @@ class Panel
 			Route::get(Config::get('panel.route')."/{op}",function($op){
 
 				//check if prefixe existe in this Kernel version
-				$prefixe = Config::check('security.prefix') ? Config::get('security.prefix')."_" : "" ;
+				//  $prefixe = Config::check('security.prefix') ? Config::get('security.prefix')."_" : "" ;
+				$prefixe = "";
 				//
 				switch ($op) {
 					case $prefixe.'new_seed' : Seeds::add(); break;
