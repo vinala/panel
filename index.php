@@ -3,7 +3,8 @@
 if( ! class_exists("Config")) die("");
 
 use Lighty\Kernel\Database\Migration;
-use Pikia\Vendor\Panel\Panel;
+use Lighty\Kernel\Foundation\Application;
+use Lighty\Panel;
 
 $rot="app/pages/panel";
 $root="./app/pages/panel";
@@ -32,7 +33,7 @@ if(!isset($_SESSION['pikia_pnl_fst_pass']) || empty($_SESSION['pikia_pnl_fst_pas
 <html>
 <head>
 	<?php Html::charset(); ?>
-	<title>Pikia | Panel</title>
+	<title>Lighty | Panel</title>
 
 	<link rel="stylesheet" href="<?php echo $path ?>bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="<?php echo $path ?>bootstrap/css/bootstrap-theme.min.css">
@@ -81,7 +82,7 @@ else if($_SESSION['pikia_pnl_fst_pass']==Config::get('panel.password1'))
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Pikia | Panel</title>
+	<title>Lighty | Panel</title>
 	<link rel="stylesheet" href="<?php echo $path ?>bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="<?php echo $path ?>bootstrap/css/bootstrap-theme.min.css">
 	<script src="app/library/jquery-1.11.3.min.js"></script>
@@ -677,10 +678,10 @@ else if($_SESSION['pikia_pnl_fst_pass']==Config::get('panel.password1'))
 			<div class="col-md-6" >
             	<div class="MD_unit MD_unit_blue">
             		<div class="MD_unit_title unit_title_blue">Framework</div>
-            		<div class="MD_unit_text"><?php echo Lighty\Kernel\Foundation\Application::version(); ?></div>
+            		<div class="MD_unit_text"><?php echo Application::version(); ?></div>
             		<div class="MD_unit_text">
-            			<?php echo Lighty\Kernel\Foundation\Application::kernelVersion(); ?><br>
-            			<?php echo Pikia\Vendor\Panel\Panel::version(); ?>
+            			<?php echo Application::kernelVersion(); ?><br>
+            			<?php echo Panel::version(); ?>
             		</div>
             		<div class="MD_unit_text">Crée par <b>Youssef Had</b> (youssefhad2@gmail.com - <a href="http://www.facebook.com/yussef.had" style="color:white">www.facebook.com/yussef.had</a> )<br></div>
             	</div>

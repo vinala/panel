@@ -1,1 +1,1 @@
-# Fiesta Panel
+# Lighty Panel

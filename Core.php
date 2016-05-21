@@ -1,6 +1,6 @@
 <?php
 
-namespace Pikia\Vendor\Panel;
+namespace Pikia;
 //
 use Lighty\Kernel\Foundation\Application;
 use Lighty\Kernel\Database\Seeder;
@@ -34,7 +34,7 @@ class Panel
 	 */
 	public static function version()
 	{
-		return "Pikia Panel v".(new Filesystem)->get(Application::$root.self::$root."version.md");
+		return "Lighty Panel v".(new Filesystem)->get(Application::$root.self::$root."version.md");
 	}
 
 	public static function run()
