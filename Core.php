@@ -22,12 +22,12 @@ class Panel
 	/**
 	 * Path of panel in the project
 	 */
-	protected static $path = "vendor/fiesta/panel/index.php";
+	protected static $path = "vendor/lighty/panel/index.php";
 
 	/**
 	 * Path of root panel
 	 */
-	protected static $root = "vendor/fiesta/panel/";
+	protected static $root = "vendor/lighty/panel/";
 
 	/**
 	 * Version of the panel
