@@ -1,7 +1,7 @@
 {
-	"name": "fiesta/panel",
-	"description": "The Fiesta Panel.",
-	"keywords": ["framework", "fiesta","Panel"],
+	"name": "lighty/panel",
+	"description": "The Lighty Panel.",
+	"keywords": ["framework", "lighty","Panel"],
 	"license": "MIT",
 	"authors": [
 		{
