@@ -2,7 +2,7 @@
 
 if( ! class_exists("Config")) die("");
 
-use Pikia\Kernel\Database\Migration;
+use Lighty\Kernel\Database\Migration;
 use Pikia\Vendor\Panel\Panel;
 
 $rot="app/pages/panel";
@@ -677,9 +677,9 @@ else if($_SESSION['pikia_pnl_fst_pass']==Config::get('panel.password1'))
 			<div class="col-md-6" >
             	<div class="MD_unit MD_unit_blue">
             		<div class="MD_unit_title unit_title_blue">Framework</div>
-            		<div class="MD_unit_text"><?php echo Pikia\Kernel\Foundation\Application::version(); ?></div>
+            		<div class="MD_unit_text"><?php echo Lighty\Kernel\Foundation\Application::version(); ?></div>
             		<div class="MD_unit_text">
-            			<?php echo Pikia\Kernel\Foundation\Application::kernelVersion(); ?><br>
+            			<?php echo Lighty\Kernel\Foundation\Application::kernelVersion(); ?><br>
             			<?php echo Pikia\Vendor\Panel\Panel::version(); ?>
             		</div>
             		<div class="MD_unit_text">Crée par <b>Youssef Had</b> (youssefhad2@gmail.com - <a href="http://www.facebook.com/yussef.had" style="color:white">www.facebook.com/yussef.had</a> )<br></div>

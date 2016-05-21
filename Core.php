@@ -2,16 +2,16 @@
 
 namespace Pikia\Vendor\Panel;
 //
-use Pikia\Kernel\Foundation\Application;
-use Pikia\Kernel\Database\Seeder;
-use Pikia\Kernel\Database\Migration;
-use Pikia\Kernel\Config\Config;
-use Pikia\Kernel\Database\Schema;
-use Pikia\Kernel\Database\Database;
-use Pikia\Kernel\Objects\DateTime as Time;
-use Pikia\Kernel\Router\Route;
-use Pikia\Kernel\Objects\Strings;
-use Pikia\Kernel\Filesystem\Filesystem;
+use Lighty\Kernel\Foundation\Application;
+use Lighty\Kernel\Database\Seeder;
+use Lighty\Kernel\Database\Migration;
+use Lighty\Kernel\Config\Config;
+use Lighty\Kernel\Database\Schema;
+use Lighty\Kernel\Database\Database;
+use Lighty\Kernel\Objects\DateTime as Time;
+use Lighty\Kernel\Router\Route;
+use Lighty\Kernel\Objects\Strings;
+use Lighty\Kernel\Filesystem\Filesystem;
 
 /**
 * File for Panel features
@@ -110,7 +110,7 @@ class Seeds
 
 	public static function set($nom)
 	{
-		$txt = "<?php\n\nuse Pikia\Kernel\Database\Seeder;\n\n";
+		$txt = "<?php\n\nuse Lighty\Kernel\Database\Seeder;\n\n";
 		$txt.="/**\n* class de seeder $nom\n*/\n\nclass $nom extends Seeder\n{\n";
 
 		//datatable name
@@ -437,7 +437,7 @@ class Controller
 
 	public static function set($class)
 	{
-		$txt = "<?php\n\n use Pikia\Kernel\MVC\Controller\Controller;\n\n";
+		$txt = "<?php\n\n use Lighty\Kernel\MVC\Controller\Controller;\n\n";
 		$txt.="/**\n* class de controller $class\n*/\n\nclass $class extends Controller\n{\n\t";
 
 		//view
@@ -595,7 +595,7 @@ class Model
 
 	public static function set($class , $table)
 	{
-		$txt = "<?php\n\nuse Pikia\Kernel\MVC\Model\Model;\n\n";
+		$txt = "<?php\n\nuse Lighty\Kernel\MVC\Model\Model;\n\n";
 		$txt.="class $class extends Model\n{\n\t//Name of the table in database\n\tpublic static ".'$table'."='$table';\n\tprotected static ".'$foreignKeys=array();'."\n\n}";
 		//
 		return $txt;
