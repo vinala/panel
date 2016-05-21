@@ -20,14 +20,14 @@ $appPath="../app/";
 if(isset($_POST['password_1']) && isset($_POST['password_2']) && !empty($_POST['password_1']) && !empty($_POST['password_1']))
 {
 	if($_POST['password_1']==Config::get('panel.password1') && $_POST['password_2']==Config::get('panel.password2')) 
-		$_SESSION['pikia_pnl_fst_pass']=$_POST['password_1'];
+		$_SESSION['lighty_pnl_fst_pass']=$_POST['password_1'];
 }
 
 if(isset($_GET['logout']) && $_GET['logout']="1") {
-	$_SESSION['pikia_pnl_fst_pass']="";unset($_SESSION['pikia_pnl_fst_pass']);}
+	$_SESSION['lighty_pnl_fst_pass']="";unset($_SESSION['lighty_pnl_fst_pass']);}
 
 
-if(!isset($_SESSION['pikia_pnl_fst_pass']) || empty($_SESSION['pikia_pnl_fst_pass']))
+if(!isset($_SESSION['lighty_pnl_fst_pass']) || empty($_SESSION['lighty_pnl_fst_pass']))
 {
 ?>
 <html>
@@ -58,7 +58,7 @@ if(!isset($_SESSION['pikia_pnl_fst_pass']) || empty($_SESSION['pikia_pnl_fst_pas
 </head>
 
 <body style="">
-	<img src="<?php echo "app/resources/images/pikia_logo.png" ?>" class="lg_img">
+	<img src="<?php echo "app/resources/images/lighty_logo.png" ?>" class="lg_img">
 	<div id="login_form">
 		<form accept-charset="UTF-8" role="form" class="form-signin" method="post" action="?login">
             <fieldset>
@@ -76,7 +76,7 @@ if(!isset($_SESSION['pikia_pnl_fst_pass']) || empty($_SESSION['pikia_pnl_fst_pas
 </html>
 <?php
 }
-else if($_SESSION['pikia_pnl_fst_pass']==Config::get('panel.password1'))
+else if($_SESSION['lighty_pnl_fst_pass']==Config::get('panel.password1'))
 {
 ?>
 <!DOCTYPE html>
