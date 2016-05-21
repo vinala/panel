@@ -1,6 +1,6 @@
 <?php
 
-namespace Pikia;
+namespace Lighty;
 //
 use Lighty\Kernel\Foundation\Application;
 use Lighty\Kernel\Database\Seeder;
