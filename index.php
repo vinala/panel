@@ -37,10 +37,9 @@ if(!isset($_SESSION['lighty_pnl_fst_pass']) || empty($_SESSION['lighty_pnl_fst_p
 
 	<link rel="stylesheet" href="<?php echo $path ?>bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="<?php echo $path ?>bootstrap/css/bootstrap-theme.min.css">
-	<script src="app/library/jquery-1.11.3.min.js"></script>
-
 	<?php
 		Html::favicon(Path::$public."/favicon.ico");
+		Libs::js($path."js/jquery-2.2.4.min.js",false);
 		Libs::js($path."js/me.js",false);
 		Libs::css($path."css/me.css",false);
 		Libs::css($path."css/main.css",false);
