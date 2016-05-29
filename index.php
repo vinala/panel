@@ -84,10 +84,10 @@ else if($_SESSION['lighty_pnl_fst_pass']==Config::get('panel.password1'))
 	<title>Lighty | Panel</title>
 	<link rel="stylesheet" href="<?php echo $path ?>bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="<?php echo $path ?>bootstrap/css/bootstrap-theme.min.css">
-	<script src="app/library/jquery-1.11.3.min.js"></script>
 	<?php 
 		Html::charset();
 		Html::favicon(Path::$public."/favicon.ico");
+		Libs::js($path."js/jquery-2.2.4.min.js",false);
 		Libs::css($path."css/main.css",false); 
 		Libs::js($path."js/main.js",false);
 		Libs::js($path."js/me.js",false);
