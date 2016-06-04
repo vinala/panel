@@ -2,12 +2,19 @@
 
 @font-face {
   font-family: 'segoe';
-  src: url('../segoeuil.ttf') format('truetype');
+  src: url('../fonts/segoeuil.ttf') format('truetype');
 }
 
 body
 {
-	font-family: segoe;
+	padding:0px;
+	margin:0px;
+	font-family: segoe !important;
+}
+
+.body_loggin
+{
+	background:#0D47A1;
 }
 
 .version_link
