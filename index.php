@@ -1,7 +1,8 @@
 <?php 
-
+session_start();
+//
 if( ! class_exists("Config")) die("");
-
+//
 use Lighty\Kernel\Database\Migration;
 use Lighty\Kernel\Foundation\Application;
 use Lighty\Panel;
