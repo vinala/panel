@@ -1,5 +1,4 @@
 <?php 
-session_start();
 //
 if( ! class_exists("Config")) die("");
 //
