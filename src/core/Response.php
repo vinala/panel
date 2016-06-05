@@ -115,4 +115,14 @@ class Response
 			echo "View created";
 		else echo "There was a problem";
 	}
+
+	/**
+	 * exec Seeder
+	 */
+	public static function execSeed()
+	{
+		if(Seeds::exec())
+			echo "Seeder executed";
+		else echo "There was a problem";
+	}
 }

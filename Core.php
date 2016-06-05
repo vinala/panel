@@ -56,6 +56,7 @@ class Panel
 				$prefixe = "";
 				//
 				switch ($op) {
+					case $prefixe.'exec_seed' : Response::execSeed(); break;
 					case $prefixe.'new_seed' : Response::createSeeder(); break;
 					case $prefixe.'exec_migration' : $proc = Migrations::exec($root); break;
 					case $prefixe.'rollback_migration' : $proc = Migrations::rollback($root); break;
