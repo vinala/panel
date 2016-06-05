@@ -41,7 +41,7 @@ class Panel
 
 	public static function run()
 	{
-		include '../vendor/lighty/panel/src/core/Response.php';
+		include Application::$root.'vendor/lighty/panel/src/core/Response.php';
 		//
 		if(Config::get('panel.enable'))
 		{
