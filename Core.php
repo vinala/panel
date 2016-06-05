@@ -64,7 +64,7 @@ class Panel
 					case $prefixe.'new_dir_lang' : Response::createLangDir(); break;
 					case $prefixe.'new_lang_file' : Response::createLangFile(); break;
 					case $prefixe.'new_link' : Response::createLink(); break;
-					case $prefixe.'new_model' : $proc = Model::create(); break;
+					case $prefixe.'new_model' : Response::createModel(); break;
 					case $prefixe.'new_view' : $proc = View::create(); break;
 					case $prefixe.'exec_cos_migration' : $proc = Migrations::exec_cos(); break;
 					case $prefixe.'rollback_cos_migration' : $proc = Migrations::rollback_cos(); break;

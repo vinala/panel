@@ -7,6 +7,7 @@ use Lighty\Kernel\Process\Migrations;
 use Lighty\Kernel\Process\Seeds;
 use Lighty\Kernel\Process\Translator;
 use Lighty\Kernel\Process\Links;
+use Lighty\Kernel\Process\Model;
 
 class Response
 {
@@ -84,6 +85,20 @@ class Response
 		//
 		if(Links::create($name, "../"))
 			echo "Link file created";
+		else echo "There was a problem";
+	}
+
+	/**
+	 * create Model
+	 */
+	public static function createModel()
+	{
+		$class=$_POST['new_models_class_name'];
+		$file=$_POST['new_models_file_name'];
+		$table=$_POST['new_models_table_name'];
+		//
+		if(Model::create($file , $class , $table, "../"))
+			echo "Model created";
 		else echo "There was a problem";
 	}
 }
