@@ -168,7 +168,10 @@
 							<input type="submit" value="Annuler schéma" class="btn unit_btn unit_btn_purple MD_submit_btn">
 						</form>
 					</div>
-					<div class="MD_unit MD_unit_cyan" style="height: 145px;">
+
+
+					<!-- Need to be verified -->
+					<!-- <div class="MD_unit MD_unit_cyan" style="height: 145px;">
 						<div class="MD_unit_title unit_title_cyan">Personnaliser l'exécution</div>
 					
 						<form id="exec_cos_migrate" method="post" name="exec_cos_migrate">
@@ -183,7 +186,7 @@
 							<input type="submit" value="Annuler" class="btn unit_btn unit_btn_cyan no_margins MD_submit_btn">
 						</form>
 						</div>
-					</div>
+					</div> -->
 				</div>
 				<div class="col-md-6" >
 					<div class="MD_unit">
@@ -555,7 +558,23 @@
 									<label for="">Nom de seed</label>
 								</div>
 								<div class="col-md-9">
-									<input type="text" class="form-control" id="" name="seedname_name" placeholder="Nom de seed">
+									<input type="text" class="form-control" id="" name="seed_name" placeholder="Nom de seed">
+								</div>
+							</div>
+							<div class="control_row">
+								<div class="col-md-3 form_control_label">
+									<label for="">Nom de Table</label>
+								</div>
+								<div class="col-md-9">
+									<input type="text" class="form-control" id="" name="seed_table" placeholder="Nom de Table">
+								</div>
+							</div>
+							<div class="control_row">
+								<div class="col-md-3 form_control_label">
+									<label for="">Nombre des ligne</label>
+								</div>
+								<div class="col-md-9">
+									<input type="text" class="form-control" id="" name="seed_count" placeholder="Nombre des ligne">
 								</div>
 							</div>
 							<div  class="MD_submit_row">

@@ -43,11 +43,11 @@ class Response
 	 */
 	public static function createSeeder()
 	{
-		$nom=$_POST['seedname_name'];
-		$table = "";
-		$count = "";
+		$name = $_POST['seed_name'];
+		$table = $_POST['seed_table'];
+		$count = $_POST['seed_count'];
 		//
-		if(Seeds::add($nom,$table,$count,"../"))
+		if(Seeds::add($name,$table,$count,"../"))
 			echo "Seeder created";
 		else echo "There was a problem";
 	}
