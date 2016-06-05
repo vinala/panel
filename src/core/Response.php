@@ -5,6 +5,7 @@ namespace Lighty\Panel;
 use Lighty\Kernel\Process\Controller;
 use Lighty\Kernel\Process\Migrations;
 use Lighty\Kernel\Process\Seeds;
+use Lighty\Kernel\Process\Translator;
 
 class Response
 {
@@ -49,14 +50,27 @@ class Response
 	}
 
 	/**
-	 * create Lang file
+	 * create Lang Directory
 	 */
 	public static function createLangDir()
 	{
-		$name=$_POST['seedname_name'];
+		$name=$_POST['lang_dir_name'];
 		//
 		if(Translator::createDir($name,"../"))
 			echo "Directory created";
+		else echo "There was a problem";
+	}
+
+	/**
+	 * create Lang File
+	 */
+	public static function createLangFile()
+	{
+		$dir=$_POST['lang_dir_name_2'];
+		$file=$_POST['lang_file_name'];
+		//
+		if(Translator::createFile($dir , $file, "../"))
+			echo "File created";
 		else echo "There was a problem";
 	}
 }
