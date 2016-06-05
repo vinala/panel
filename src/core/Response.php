@@ -8,6 +8,7 @@ use Lighty\Kernel\Process\Seeds;
 use Lighty\Kernel\Process\Translator;
 use Lighty\Kernel\Process\Links;
 use Lighty\Kernel\Process\Model;
+use Lighty\Kernel\Process\View;
 
 class Response
 {
@@ -99,6 +100,19 @@ class Response
 		//
 		if(Model::create($file , $class , $table, "../"))
 			echo "Model created";
+		else echo "There was a problem";
+	}
+
+	/**
+	 * create View
+	 */
+	public static function createView()
+	{
+		$name=$_POST['new_view_file_name'];
+		$isSmarty=isset($_POST['new_controller_add_route']);
+		//
+		if(View::create($name , $isSmarty, "../"))
+			echo "View created";
 		else echo "There was a problem";
 	}
 }
