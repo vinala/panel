@@ -630,32 +630,32 @@
 	            		<div class="MD_unit_text">Crée par <b>Youssef Had</b> (youssefhad2@gmail.com - <a href="http://www.facebook.com/yussef.had" style="color:white">www.facebook.com/yussef.had</a> )<br></div>
 	            	</div>
 
-	            	<div class="MD_unit MD_unit_slategray">
+	            	<!-- <div class="MD_unit MD_unit_slategray">
 	            		<div class="MD_unit_title unit_title_slategray">GitHub</div>
 	            		<div class="MD_unit_text">
-	            			<!-- Place this tag where you want the button to render. -->
+	            			<!-- Place this tag where you want the button to render. - ->
 							<a class="github-button" href="https://github.com/fiesta-framework/Fiesta" data-icon="octicon-star" data-style="mega" data-count-href="/fiesta-framework/Fiesta/stargazers" data-count-api="/repos/fiesta-framework/Fiesta#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star fiesta-framework/Fiesta on GitHub">J'aime</a>
 						</div>
 
 						<div class="MD_unit_text">
-							<!-- Place this tag where you want the button to render. -->
+							<!-- Place this tag where you want the button to render. - ->
 							<a class="github-button" href="https://github.com/youssefhad" data-style="mega" data-count-href="/youssefhad/followers" data-count-api="/users/youssefhad#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @youssefhad on GitHub">Suivi @youssefhad</a>
 						</div>
 
 						<div class="MD_unit_text">
-							<!-- Place this tag where you want the button to render. -->
+							<!-- Place this tag where you want the button to render. - ->
 							<a class="github-button" href="https://github.com/fiesta-framework/Fiesta/fork" data-icon="octicon-git-branch" data-style="mega" data-count-href="/fiesta-framework/Fiesta/network" data-count-api="/repos/fiesta-framework/Fiesta#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork fiesta-framework/Fiesta on GitHub">Fork</a>
 
-							<!-- Place this tag right after the last button or just before your close body tag. -->
+							<!-- Place this tag right after the last button or just before your close body tag. - ->
 							<script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
 	            		</div>
 
 	            		<div class="MD_unit_text">
 							<a class="github-button" href="https://github.com/fiesta-framework/Fiesta/issues">Issues</a>
 						</div>
-	            	</div>
+	            	</div> -->
 				</div>
-				<div class="col-md-6" >
+				<!-- <div class="col-md-6" >
 					<div class="MD_unit MD_unit_red">
 		        		<div class="MD_unit_title unit_title_red">Versions</div>
 		        		<div class="MD_unit_text">
@@ -688,7 +688,7 @@
 
 		        		</div>
 		            </div>
-				</div>
+				</div> -->
 			</div>
 		</div>
 
