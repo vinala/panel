@@ -1,6 +1,7 @@
 <?php 
 	use Lighty\Kernel\Database\Migration;
 	use Lighty\Kernel\Foundation\Application;
+	use Lighty\Kernel\Config\Config;
 	use Lighty\Panel;
 ?>
 
@@ -30,11 +31,14 @@
 			<div class="menu_icon" id="menu_icon">
 				<span class="glyphicon glyphicon-align-justify"></span>
 			</div>
+			
 			<a href="?logout=1">
 			<div class="menu_icon" id="menu_icon" style="float: right;">
 				<span class="glyphicon glyphicon-off"></span>
 			</div>
 			</a>
+
+			<div class="menu_name">Hello <?php echo Config::get('app.owner') ?></div>
 			<div class="logo"></div>
 
 		</div>
