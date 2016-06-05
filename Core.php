@@ -58,8 +58,8 @@ class Panel
 				switch ($op) {
 					case $prefixe.'exec_seed' : Response::execSeed(); break;
 					case $prefixe.'new_seed' : Response::createSeeder(); break;
-					case $prefixe.'exec_migration' : $proc = Migrations::exec($root); break;
-					case $prefixe.'rollback_migration' : $proc = Migrations::rollback($root); break;
+					case $prefixe.'exec_migration' : Response::execSchema(); break;
+					case $prefixe.'rollback_migration' : Response::rollbackSchema(); break;
 					case $prefixe.'new_migration' : Response::createSchema(); break;
 					case $prefixe.'new_controller' : Response::createController(); break;
 					case $prefixe.'new_dir_lang' : Response::createLangDir(); break;
@@ -67,8 +67,8 @@ class Panel
 					case $prefixe.'new_link' : Response::createLink(); break;
 					case $prefixe.'new_model' : Response::createModel(); break;
 					case $prefixe.'new_view' : Response::createView(); break;
-					case $prefixe.'exec_cos_migration' : $proc = Migrations::exec_cos(); break;
-					case $prefixe.'rollback_cos_migration' : $proc = Migrations::rollback_cos(); break;
+					// case $prefixe.'exec_cos_migration' : $proc = Migrations::exec_cos(); break;
+					// case $prefixe.'rollback_cos_migration' : $proc = Migrations::rollback_cos(); break;
 				}
 			});
 		}

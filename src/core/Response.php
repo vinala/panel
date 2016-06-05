@@ -125,4 +125,24 @@ class Response
 			echo "Seeder executed";
 		else echo "There was a problem";
 	}
+
+	/**
+	 * exec Schema
+	 */
+	public static function execSchema()
+	{
+		if(Migrations::exec("../"))
+			echo "Schema executed";
+		else echo "There was a problem";
+	}
+
+	/**
+	 * rollback Schema
+	 */
+	public static function rollbackSchema()
+	{
+		if(Migrations::rollback("../"))
+			echo "Schema rollbacked";
+		else echo "There was a problem";
+	}
 }
