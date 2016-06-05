@@ -6,6 +6,7 @@ use Lighty\Kernel\Process\Controller;
 use Lighty\Kernel\Process\Migrations;
 use Lighty\Kernel\Process\Seeds;
 use Lighty\Kernel\Process\Translator;
+use Lighty\Kernel\Process\Links;
 
 class Response
 {
@@ -71,6 +72,18 @@ class Response
 		//
 		if(Translator::createFile($dir , $file, "../"))
 			echo "File created";
+		else echo "There was a problem";
+	}
+
+	/**
+	 * create Link File
+	 */
+	public static function createLink()
+	{
+		$name=$_POST['link_name'];
+		//
+		if(Links::create($name, "../"))
+			echo "Link file created";
 		else echo "There was a problem";
 	}
 }
