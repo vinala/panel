@@ -37,14 +37,14 @@ body
 
 .top_header .logo
 {
-	width: 29px;
-    height: 35px;
+	width: 34px;
+    height: 38px;
     display: block;
     margin: 1pt auto;
-    background: url(../assets/images/Lighty_Icon.png);
+    background: url(../images/Lighty_Icon.png);
     background-size: contain;
     background-repeat: no-repeat;
-    margin-top: 6px;
+    margin-top: 5px;
 }
 
 .side_bar
@@ -563,7 +563,7 @@ body
 
 
 
-
+/*Switch*/
 .switch {
     position: relative; width: 31px;
     -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
@@ -612,7 +612,3 @@ body
 .switch-checkbox:checked + .switch-label:before {
     right: 0px; 
 }
-
-
-
-
