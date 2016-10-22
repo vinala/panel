@@ -24,12 +24,12 @@ class Panel
 	/**
 	 * Path of panel in the project
 	 */
-	protected static $path = "vendor/lighty/panel/index.php";
+	protected static $path = "vendor/vinala/panel/index.php";
 
 	/**
 	 * Path of root panel
 	 */
-	protected static $root = "vendor/lighty/panel/";
+	protected static $root = "vendor/vinala/panel/";
 
 	/**
 	 * Version of the panel
@@ -41,7 +41,7 @@ class Panel
 
 	public static function run()
 	{
-		include Application::$root.'vendor/lighty/panel/src/core/Response.php';
+		include Application::$root.'vendor/vinala/panel/src/core/Response.php';
 		//
 		if(Config::get('panel.enable'))
 		{
