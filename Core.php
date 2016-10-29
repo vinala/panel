@@ -1,6 +1,6 @@
 <?php
 
-namespace Lighty;
+namespace Vinala;
 //
 use Vinala\Kernel\Foundation\Application;
 use Vinala\Kernel\Database\Seeder;
