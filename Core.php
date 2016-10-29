@@ -2,17 +2,17 @@
 
 namespace Lighty;
 //
-use Lighty\Kernel\Foundation\Application;
-use Lighty\Kernel\Database\Seeder;
-use Lighty\Kernel\Database\Migration;
-use Lighty\Kernel\Config\Config;
-use Lighty\Kernel\Database\Database;
-use Lighty\Kernel\Objects\DateTime as Time;
-use Lighty\Kernel\Router\Route;
-use Lighty\Kernel\Objects\Strings;
-use Lighty\Kernel\Filesystem\Filesystem;
-use Lighty\Kernel\Process\Migrations as Schema;
-use Lighty\Panel\Response;
+use Vinala\Kernel\Foundation\Application;
+use Vinala\Kernel\Database\Seeder;
+use Vinala\Kernel\Database\Migration;
+use Vinala\Kernel\Config\Config;
+use Vinala\Kernel\Database\Database;
+use Vinala\Kernel\Objects\DateTime as Time;
+use Vinala\Kernel\Router\Route;
+use Vinala\Kernel\Objects\Strings;
+use Vinala\Kernel\Filesystem\Filesystem;
+use Vinala\Kernel\Process\Migrations as Schema;
+use Vinala\Panel\Response;
 
 
 /**

@@ -1,14 +1,14 @@
 <?php 
 
-namespace Lighty\Panel;
+namespace Vinala\Panel;
 
-use Lighty\Kernel\Process\Controller;
-use Lighty\Kernel\Process\Migrations;
-use Lighty\Kernel\Process\Seeds;
-use Lighty\Kernel\Process\Translator;
-use Lighty\Kernel\Process\Links;
-use Lighty\Kernel\Process\Model;
-use Lighty\Kernel\Process\View;
+use Vinala\Kernel\Process\Controller;
+use Vinala\Kernel\Process\Migrations;
+use Vinala\Kernel\Process\Seeds;
+use Vinala\Kernel\Process\Translator;
+use Vinala\Kernel\Process\Links;
+use Vinala\Kernel\Process\Model;
+use Vinala\Kernel\Process\View;
 
 class Response
 {

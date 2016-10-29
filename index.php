@@ -2,7 +2,7 @@
 //
 if( ! class_exists("Config")) die("");
 //
-use Lighty\Panel;
+use Vinala\Panel;
 
 $rot="app/pages/panel";
 $root="./app/pages/panel";

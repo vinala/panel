@@ -1,8 +1,8 @@
 <?php 
-	use Lighty\Kernel\Database\Migration;
-	use Lighty\Kernel\Foundation\Application;
-	use Lighty\Kernel\Config\Config;
-	use Lighty\Panel;
+	use Vinala\Kernel\Database\Migration;
+	use Vinala\Kernel\Foundation\Application;
+	use Vinala\Kernel\Config\Config;
+	use Vinala\Panel;
 ?>
 
 <!DOCTYPE html>
